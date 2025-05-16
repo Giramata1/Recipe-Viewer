@@ -39,7 +39,7 @@ export default function RecipePage({ recipe }: Props) {
           </h1>
         </div>
 
-        {/* Recipe Image */}
+      
         <div className="relative mb-8 mx-auto w-4/5">
           <div className="rounded-full overflow-hidden aspect-square bg-gray-200">
             <Image
@@ -52,7 +52,7 @@ export default function RecipePage({ recipe }: Props) {
           </div>
         </div>
 
-        {/* Ingredients & Sizes */}
+       
         <div className="flex flex-col md:flex-row gap-8 mt-12">
           <div className="flex-1">
             <h2 className="text-xl font-bold text-gray-900 uppercase mb-3 border-b border-gray-400 pb-1">
@@ -83,7 +83,7 @@ export default function RecipePage({ recipe }: Props) {
           </div>
         </div>
 
-        {/* Steps */}
+       
         <div className="mt-8">
           <h2 className="text-xl font-bold text-gray-900 uppercase mb-3 border-b border-gray-400 pb-1">
             Preparation Steps
@@ -97,7 +97,7 @@ export default function RecipePage({ recipe }: Props) {
           </ol>
         </div>
 
-        {/* Back Link */}
+     
         <div className="mt-8 text-center">
           <Link
             href="/"
