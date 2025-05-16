@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Your existing homepage styles */
+
+.homepage {
+  min-height: 100vh;
+  padding: 3rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.homepage__content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.homepage__title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  text-align: center;
+  color: #34495e;
+  margin-bottom: 3rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.75rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.recipe-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  overflow: hidden;
+  text-decoration: none;
+  color: #2d3436;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+}
+
+.recipe-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 18px 35px rgba(0,0,0,0.15);
+}
+
+.recipe-card__image-wrapper {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+  background: linear-gradient(135deg, #f4b469cc, #f77c64cc);
+}
+
+.recipe-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  will-change: transform;
+}
+
+.recipe-card:hover .recipe-card__image {
+  transform: scale(1.1);
+}
+
+.recipe-card__info {
+  padding: 1.5rem 1.8rem 2rem 1.8rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.recipe-card__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  color: #2c3e50;
+  user-select: text;
+}
+
+.recipe-card__subtitle {
+  font-size: 1rem;
+  color: #7f8c8d;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
